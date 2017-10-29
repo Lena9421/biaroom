@@ -1,0 +1,91 @@
+
+
+.main-header {
+    width: 750px;
+    height: 167px;
+    margin: 0 auto;
+    background-color: #2a2a34;
+    position: relative;
+}
+
+.main-header__menu {
+    width: 36px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 74px;
+    right: 41px;
+}
+.main-header__hamburger {
+    cursor: pointer;
+}
+
+.main-container {
+    width: 750px;
+    margin: 0 auto;
+}
+.slider {
+    height: 1168px;
+    position: relative;
+ }
+
+.slider__controls {
+    position: absolute;
+    bottom: 25px;
+    margin-left: 45%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.btn-1,
+.btn-2,
+.btn-3   {
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.slide {
+    display: none;
+}
+
+.btn-1:checked ~ .slider-controls [for='btn-1'],
+.btn-2:checked ~ .slider-controls label[for='btn-2'],
+.btn-3:checked ~ .slider-controls label[for='btn-3'] {
+    background-color: yellow;
+}
+.btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+.btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+.btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+
+.slider__button {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: green;
+    vertical-align: top;
+    margin: 0 3px;
+    border: none;
+}
+.slide {
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    width: 750px;
+    height: 1168px;
+    margin-top: 0;
+    background-image: url("../img/slide-1.jpg");
+    background-color: #eee;
+}
