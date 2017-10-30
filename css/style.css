@@ -25,7 +25,9 @@ body {
     top: 74px;
     right: 41px;
 }
-
+.site-navigation {
+    display: none;
+}
 .main-header__logo {
    position: absolute;
    left: 40px;
@@ -453,7 +455,9 @@ and (max-width: 3600px) {
     .main-header__menu {
        display: none;
     }
-
+    .site-navigation {
+        d
+    }
     .slider {
         width: 1600px;
         height: 530px;
@@ -612,6 +616,7 @@ and (max-width: 3600px) {
     .feature--fourth {
         width: 1600px;
         height: 830px;
+        position: relative;
     }
     .feature--fourth .feature__title {
         font-size: 50px;
@@ -652,6 +657,9 @@ and (max-width: 3600px) {
         border-radius: 8px;
 
     }
+    .user-info__btn {
+
+    }
 
     .user-info__name,
     .user-info__surname,
@@ -666,7 +674,10 @@ and (max-width: 3600px) {
         padding-left: 50px;
     }
    .feature__book {
-       display: none;
+       position: absolute;
+       height: 409px;
+       left: 12%;
+       top: 38%;
    }
    .main-footer {
        display: none;
