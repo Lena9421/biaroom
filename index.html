@@ -12,6 +12,7 @@
 <body>
 <header class="main-header">
     <div class="main-header__logo">
+        <img src="img/logo.png" alt="logo">
     </div>
     <button type="button" class="main-header__menu">
         <img class="main-header__hamburger" src="img/menu.svg" alt="menu">
@@ -19,61 +20,152 @@
 </header>
 <main class="main-container">
     <section class="slider">
-            <input type="radio" id="btn-1" class="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" class="btn-2" name="toggle">
-            <input type="radio" id="btn-3" class="btn-3" name="toggle">
-            <div class="slider__controls">
-                <label class="slider__button" for="btn-1"></label>
-                <label class="slider__button" for="btn-2"></label>
-                <label class="slider__button" for="btn-3"></label>
+        <input type="radio" id="btn-1" class="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" class="btn-2" name="toggle">
+        <input type="radio" id="btn-3" class="btn-3" name="toggle">
+        <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+        </div>
+        <div class="slides">
+            <div class="slide">
+                <div class="slide__text">
+                    <h1 class="slide__title">Lorem 1?</h1>
+                    <p class="slide__description">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                    <p class="slide__summary summary">Lorem ipsum dolor sit amet,
+                        <span class="summary__inference">consectetur adipiscing elit</span></p>
+                </div>
             </div>
-            <div class="slides">
-                <div class="slide">
-                    <div class="slide__text">
-                        <h1>Lorem 1?</h1>
-                       <p>Lorem ipsum dolor sit amet,
-                           consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit</p>
-                    </div>
+            <div class="slide">
+                <div class="slide__text">
+                    <h1 class="slide__title">Lorem 2?</h1>
+                    <p class="slide__description">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                    <p class="slide__summary summary">Lorem ipsum dolor sit amet,
+                        <span class="summary__inference">consectetur adipiscing elit</span></p>
                 </div>
-                <div class="slide">
-                    <div class="slide__text">
-                        <h1>Lorem 1?</h1>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit</p>
-                    </div>
-                    </div>
+            </div>
+            <div class="slide">
+                <div class="slide__text">
+                    <h1 class="slide__title">Lorem 3?</h1>
+                    <p class="slide__description">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
+                    <p class="slide__summary summary">Lorem ipsum dolor sit amet,
+                        <span class="summary__inference">consectetur adipiscing elit</span></p>
                 </div>
-                <div class="slide">
-                    <div class="slide__text">
-                        <h1>Lorem 1?</h1>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit, sed do eiusmod tempor incididun</p>
-                        <p>Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit</p>
-                    </div>
-                </div>
+            </div>
+        </div>
     </section>
     <section class="feature feature--second">
+        <h1 class="feature__title feature__title--second">Lorem
+            2</h1>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked="">
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <input type="radio" name="slider" id="slide5">
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <div class="page">
+                            <img src="img/photo-slider.png" alt="photo">
+                        </div>
+                        <div class="page">
+                            <img src="img/photo-slider.png" alt="photo">
+                        </div>
+                        <div class="page">
+                            <img src="img/photo-slider.png" alt="photo">
+                        </div>
+                        <div class="page">
+                            <img src="img/photo-slider.png" alt="photo">
+                        </div>
+                        <div class="page">
+                            <img src="img/photo-slider.png" alt="photo">
+                        </div>
+                    </div> <!--inner-->
+                </div> <!--overflow-->
+            </div> <!--slides--> </br>
+            <div id="controls">  <!--кнопки по бокам-->
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+                <label for="slide5"></label>
+            </div>
+        </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <p class="feature__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.”</p>
+        <p class="feature__text feature__text--blue">Teacher 2 Pro Member</p>
+        <button type="button" class="feature__btn">Lorem Ipsum</button>
     </section>
     <section class="feature feature--third">
+        <h1 class="feature__title">Lorem
+            3</h1>
+        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam</p>
+        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. </p>
+        <p class="feature__text feature__text--green">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod
+            tempor incididunt ut labore et dolore.</p>
+        <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua.</p>
+        <button type="button" class="feature__btn">Lorem Ipsum</button>
     </section>
     <section class="feature feature--fourth">
-        <form class="user-information">
-            <label for="first-name"></label>
-            <input id="first-name" placeholder="First name" type="text">
-            <label for="last-name"></label>
-            <input id="last-name" placeholder="Last name" type="text">
-            <label for="email"></label><input id="email" placeholder="Email" type="text">
-            <button type="submit" class="user-information__btn"></button>
+        <h1 class="feature__title">Lorem
+            4</h1>
+        <img class="feature__book" src="img/book.png" alt="book">
+        <div class="info">
+            <p class="feature__text">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <form class="user-info">
+            <label class="user-info__name" for="first-name">First name</label>
+            <input class="user-info__field" id="first-name" placeholder="First name" type="text">
+            <label class="user-info__surname" for="last-name">Last name</label>
+            <input class="user-info__field" id="last-name" placeholder="Last name" type="text">
+            <label class="user-info__mail" for="email">Email</label>
+            <input class="user-info__field" id="email" placeholder="Email" type="text">
+            <button type="submit" class="user-info__btn feature__btn">Lorem Ipsum</button>
         </form>
-        <footer class="main-footer">
-        </footer>
+        </div>
     </section>
+    <footer class="main-footer">
+        <p class="footer__text">Buy now</p>
+    </footer>
 </main>
+<script src="js/script.js">
+</script>
 </body>
 </html>
