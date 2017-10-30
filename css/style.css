@@ -33,6 +33,10 @@ body {
    left: 40px;
    top: 25px;
 }
+.main-header__btn {
+    display: none;
+}
+
 .main-header__hamburger {
     cursor: pointer;
 }
@@ -62,12 +66,7 @@ body {
     margin-left: -40px;
 
     text-align: center;
-
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
+    align-items: center;
     justify-content: space-between;
 }
 .slider-controls label {
@@ -89,6 +88,7 @@ body {
     background-color: #64c800;
     width: 18px;
     height: 18px;
+    bottom: 10px;
 }
 .slider input,
 .slider input,
@@ -111,7 +111,6 @@ body {
 .slide__text {
     width: 380px;
     height: 335px;
-
 }
 
 .slide__title {
@@ -445,18 +444,44 @@ and (max-width: 3600px) {
     }
     .main-header {
         width: 1600px;
-        height: 167px;
+        height: 71px;
         margin: 0 auto;
         background-color: #2a2a34;
         position: fixed;
         z-index: 1000;
+    }
+    .main-header__logo {
+        position: absolute;
+        left: 314px;
+        top: 15px;
+    }
+    .main-header__btn {
+        display: block;
+        position: absolute;
+        right: 320px;
+        top: 20px;
     }
 
     .main-header__menu {
        display: none;
     }
     .site-navigation {
-        d
+        display: flex;
+        flex-direction: row;
+        width: 426px;
+        color: white;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+        font-family: 'Open Sans','Arial', sans-serif;
+        font-size: 16px;
+        margin-left: 30%;
+        margin-top: 30px;
+
+    }
+
+    .main-container {
+        margin-top: 71px;
     }
     .slider {
         width: 1600px;
@@ -568,6 +593,45 @@ and (max-width: 3600px) {
         margin-top: 50px;
         padding-left: 24%;
         margin-bottom: 150px;
+    }
+
+    #slider {
+        width: 1000px;
+        height: 700px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #slides {
+        background: #fff;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .inner {
+        width: 500%;
+    }
+
+    .inner:after {
+        content:'';
+        display: block;
+        height: 0;
+        clear:both;
+    }
+
+    .page {
+        float: left;
+        width: 20%;
+        background-image: url("../img/three-pic.png")
+    }
+    .page__img {
+       visibility: hidden;
+    }
+
+    .page img {
+        width:425px;
+        height: 509px;
+        margin-left: 24%;
     }
     .feature--third {
         width: 1600px;

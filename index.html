@@ -12,11 +12,15 @@
 <body>
 <header class="main-header">
     <div class="main-header__logo">
-        <img src="img/logo.png" alt="logo">
+        <picture>
+            <source media="(min-width:1600px)" srcset="img/logo-desktop.png">
+            <img src="img/logo.png" alt="logo">
+        </picture>
     </div>
     <button type="button" class="main-header__menu">
         <img class="main-header__hamburger" src="img/menu.svg" alt="menu">
     </button>
+    <button type="submit" class="feature__btn main-header__btn">Lorem Ipsum</button>
     <ul class="site-navigation">
         <li class="site-navigation__item">Lorem 1</li>
         <li class="site-navigation__item">Lorem 2</li>
@@ -77,19 +81,19 @@
                 <div id="overflow">
                     <div class="inner">
                         <div class="page">
-                            <img src="img/photo-slider.png" alt="photo">
+                            <img class="page__img" src="img/photo-slider.png" alt="photo">
                         </div>
                         <div class="page">
-                            <img src="img/photo-slider.png" alt="photo">
+                            <img class="page__img" src="img/photo-slider.png" alt="photo">
                         </div>
                         <div class="page">
-                            <img src="img/photo-slider.png" alt="photo">
+                            <img class="page__img" src="img/photo-slider.png" alt="photo">
                         </div>
                         <div class="page">
-                            <img src="img/photo-slider.png" alt="photo">
+                            <img class="page__img" src="img/photo-slider.png" alt="photo">
                         </div>
                         <div class="page">
-                            <img src="img/photo-slider.png" alt="photo">
+                            <img class="page__img" src="img/photo-slider.png" alt="photo">
                         </div>
                     </div> <!--inner-->
                 </div> <!--overflow-->
@@ -102,29 +106,6 @@
                 <label for="slide5"></label>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <p class="feature__text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua.”</p>
         <p class="feature__text feature__text--blue">Teacher 2 Pro Member</p>
@@ -154,24 +135,22 @@
         <img class="feature__book" src="img/book.png" alt="book">
         <div class="info">
             <p class="feature__text">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <form class="user-info">
-            <label class="user-info__name" for="first-name">First name</label>
-            <input class="user-info__field" id="first-name" placeholder="First name" type="text">
-            <label class="user-info__surname" for="last-name">Last name</label>
-            <input class="user-info__field" id="last-name" placeholder="Last name" type="text">
-            <label class="user-info__mail" for="email">Email</label>
-            <input class="user-info__field" id="email" placeholder="Email" type="text">
-            <button type="submit" class="user-info__btn feature__btn">Lorem Ipsum</button>
-        </form>
+                consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <form class="user-info">
+                <label class="user-info__name" for="first-name">First name</label>
+                <input class="user-info__field" id="first-name" placeholder="First name" type="text">
+                <label class="user-info__surname" for="last-name">Last name</label>
+                <input class="user-info__field" id="last-name" placeholder="Last name" type="text">
+                <label class="user-info__mail" for="email">Email</label>
+                <input class="user-info__field" id="email" placeholder="Email" type="text">
+                <button type="submit" class="user-info__btn feature__btn">Lorem Ipsum</button>
+            </form>
         </div>
     </section>
     <footer class="main-footer">
         <p class="footer__text">Buy now</p>
     </footer>
 </main>
-<script src="js/script.js">
-</script>
 </body>
 </html>
